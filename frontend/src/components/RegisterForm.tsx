@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "./Header";
 
 interface RegisterFormProps {
   onSubmit: (data: { username: string; email: string; password: string }) => void;
@@ -12,7 +11,6 @@ export default function RegisterForm({ onSubmit }: RegisterFormProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-fuchsia-500">
-      <Header />
       <div className="flex items-center justify-center mt-12">
         <div className="w-full max-w-md bg-white rounded-lg shadow-2xl p-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
